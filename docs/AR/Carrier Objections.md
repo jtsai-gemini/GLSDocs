@@ -1,5 +1,3 @@
-AR, Carrier Objections
-
 _Last Updated: 12/06/2024_
 
 # Basics
