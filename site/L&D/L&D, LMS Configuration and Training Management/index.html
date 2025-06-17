@@ -1,0 +1,1129 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://GLSDocs.github.io/L%26D/L%26D%2C%20LMS%20Configuration%20and%20Training%20Management/">
+      
+      
+        <link rel="prev" href="../L%26D%2C%20Content%20Creation%20Process/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>L&D, LMS Configuration and Training Management - Gemini Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#basics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Gemini Documentation" class="md-header__button md-logo" aria-label="Gemini Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Gemini Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              L&D, LMS Configuration and Training Management
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../test/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Test
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../AR/AR%2C%20Carrier%20Objections/" class="md-tabs__link">
+          
+  
+  
+  AR
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../L%26D%2C%20Content%20Creation%20Process/" class="md-tabs__link">
+          
+  
+  
+  L&D
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Gemini Documentation" class="md-nav__button md-logo" aria-label="Gemini Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Gemini Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AR
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            AR
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AR/AR%2C%20Carrier%20Objections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AR, Carrier Objections
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    L&D
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            L&D
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../L%26D%2C%20Content%20Creation%20Process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    L&D, Content Creation Process
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    L&D, LMS Configuration and Training Management
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    L&D, LMS Configuration and Training Management
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-admin-controls-and-access-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Admin Controls and Access Levels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Admin Controls and Access Levels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-learning-supervisor-or-learning-content-creator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Learning Supervisor or Learning Content Creator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-custom-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Custom Categories
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-multi-content-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build Multi Content Training
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assign-lms-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assign LMS Training
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-admin-controls-and-access-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Admin Controls and Access Levels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Admin Controls and Access Levels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-learning-supervisor-or-learning-content-creator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add Learning Supervisor or Learning Content Creator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-custom-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Custom Categories
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-multi-content-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build Multi Content Training
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assign-lms-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assign LMS Training
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>L&D, LMS Configuration and Training Management</h1>
+
+<p><em>Last Updated: 05/28/2025</em></p>
+<h2 id="basics">Basics</h2>
+<p><strong>What is this about?</strong></p>
+<p>This document provides a standardized process for setting up a course in Paylocity for use at Gemini Academy.</p>
+<p><strong>Who is involved?</strong></p>
+<ul>
+<li>Learning &amp; Development Team</li>
+</ul>
+<p><strong>Where will it happen?</strong></p>
+<ul>
+<li>Paylocity HRIS</li>
+</ul>
+<p><strong>How often should we work on this?</strong></p>
+<ul>
+<li>Whenever a new course needs to be uploaded into Paylocity.</li>
+</ul>
+<p><strong>How long should it take?</strong></p>
+<ul>
+<li>No more than 15 minutes.</li>
+</ul>
+<p><strong>What are the essential requirements?</strong></p>
+<ul>
+<li>Any content included in the course should be gathered and prepared prior to uploading.</li>
+</ul>
+<p><strong>Why should we do it?</strong></p>
+<ul>
+<li>Paylocity is the LMS we use to manage the learning experience of Gemini Academy students.</li>
+</ul>
+<p><strong>What documents are related to this one?</strong></p>
+<ul>
+<li><a href="https://docs.google.com/document/d/1zHjl5Ro3UhhxIgBcVbyIVm6gfCr4nVRIAIltnNaBZn0/edit#heading=h.zfj25kxiuusl">L&amp;D, Content Creation Process, 04/22/2024</a></li>
+</ul>
+<h2 id="configuring-admin-controls-and-access-levels">Configuring Admin Controls and Access Levels</h2>
+<h3 id="roles">Roles</h3>
+<ul>
+<li>
+<p><strong>Learning Administrators</strong></p>
+<ul>
+<li>
+<p>Create training in all categories </p>
+</li>
+<li>
+<p>Edit training in all categories </p>
+</li>
+<li>
+<p>Manage training and categories in catalog </p>
+</li>
+<li>
+<p>Assign training to all employees </p>
+</li>
+<li>
+<p>View training results for all employees </p>
+</li>
+<li>
+<p>Configure settings and security roles </p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Learning Supervisor</strong> </p>
+<ul>
+<li>
+<p>Create training content </p>
+</li>
+<li>
+<p>Edit training created by you or your direct reports </p>
+</li>
+<li>
+<p>Assign training to themselves and their direct reports </p>
+</li>
+<li>
+<p>View training results for themselves and their direct reports </p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Learning Content Creator</strong></p>
+<ul>
+<li>
+<p>Create trainings </p>
+</li>
+<li>
+<p>Edit trainings created </p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Learning Employees</strong> </p>
+<ul>
+<li>Default for all employees </li>
+</ul>
+</li>
+</ul>
+<h3 id="add-learning-supervisor-or-learning-content-creator">Add Learning Supervisor or Learning Content Creator</h3>
+<ol>
+<li>
+<p>Navigate to <strong>Learning &gt; Configuration</strong>.</p>
+</li>
+<li>
+<p>Select the dropdown arrow next to <strong>Admin</strong>.</p>
+</li>
+<li>
+<p>Select one of the following <strong>Admin</strong> roles (employees can only get assigned to one):</p>
+<ul>
+<li>
+<p>Learning Supervisors</p>
+</li>
+<li>
+<p>Learning Content Creators</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Select the <strong>Select Employee</strong> dropdown.</p>
+</li>
+<li>
+<p>Choose the appropriate employee to designate as Learning Supervisor or Learning Content Creator.</p>
+</li>
+</ol>
+<h3 id="create-custom-categories">Create Custom Categories</h3>
+<p>Categories within <a href="https://paylocity.egain.cloud/system/templates/selfservice/pctycss/help/customer/locale/en-US/portal/308600000001009/content/PCTY-58079/Learning-Management-System"><strong>Learning Management System</strong></a> (LMS) allow Company Administrators to categorize and filter courses in the LMS Catalog.</p>
+<p>To create custom categories:</p>
+<ol>
+<li>
+<p>Navigate to <strong>Learning &gt; Configuration &gt; Categories</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Add Category</strong>.
+   <img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcenJvQHNC4Jm_qvvLzEWQa6oZznb_DeIhkCI8--yfds0jNdR0-2BK7Ix03faXlL7F_nEkoQ305RG0RuvxA68IZx8qIXVipbUeeflzfS1gfcAbqUWko-8Fe2NZbhy0Y-_PikpHq98_YwVG3F6xLOgWO3G0v?key=OO5mavFUOK7B5KK_gtgiwQ" /></p>
+</li>
+<li>
+<p>The <strong>Category</strong> drawer will appear.</p>
+</li>
+<li>
+<p>Enter the <em>Category Name</em> in the text field under <strong>Category</strong>.</p>
+</li>
+<li>
+<p>Add up to 4 layers of subcategories for further hierarchy.</p>
+</li>
+<li>
+<p>Select <strong>Done</strong> once Subcategories are complete.
+   <img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc3dPsfpAKBHcM-S0jNIrMrZAxuD3sG0qUijkZEv09UTnZBKY2e6AxkmDh0_W8HsmQVKen4O1XbC1bnF4JEz6TtXGEZ85XaiBNCz6lw8-s_97i5gbUU5vJmw0AzSdWNRILfmyRuB4zmKw-0e3u4zely060?key=OO5mavFUOK7B5KK_gtgiwQ" /></p>
+</li>
+<li>
+<p>Select <strong>Save</strong>.</p>
+</li>
+</ol>
+<p>💡 <strong>ADDITIONAL INFORMATION:</strong> Company created courses cannot be added to existing Paylocity training categories, and Paylocity trainings cannot be added to company created categories.</p>
+<h2 id="build-multi-content-training">Build Multi Content Training</h2>
+<ol>
+<li>
+<p>Navigate to <strong>Learning &gt; Configuration</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Training Catalog</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Add Training</strong>. If this is the first training built, select <strong>Build Training</strong>.</p>
+</li>
+<li>
+<p>Select <strong>+ Add Content</strong> to add training content to course.</p>
+<ul>
+<li>
+<p>The only content available to use will be content the company has created or uploaded into LMS.</p>
+</li>
+<li>
+<p>Paylocity trainings cannot be added.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Select <strong>+ Add Section Header</strong> to organize content into sections.</p>
+</li>
+<li>
+<p>Re-order training by dragging content into desired location.</p>
+</li>
+<li>
+<p>Select <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Deselect the <strong>Require learner to complete content in order, top to bottom</strong> checkbox for the learner to complete content in any order.
+   <img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdG0FoydGfJtK_HbY0zgHOzR68myfoqh_6Z9hNVh5cselzhNGTPBrT3Rvun9UHA-m3iRtel9lt2qvuzZRin6HQX5Ur4ayJ2Kkd5tqSi_0uohcMyZsVc-WK3pD_yciEMnUznF9T6k2fHWuFbZPXwYzvxkKIc?key=OO5mavFUOK7B5KK_gtgiwQ" /></p>
+</li>
+<li>
+<p>Enter a <strong>Title</strong>.</p>
+</li>
+<li>
+<p>Select a <strong>Category</strong> from the dropdown menu. Add additional <strong>Sub Categories</strong> if necessary.</p>
+</li>
+<li>
+<p>Enter a <strong>Description</strong>.</p>
+</li>
+<li>
+<p>Select one of the following to add a custom <strong>Thumbnail</strong> that displays in the Training Catalog and Preview pages: (file size limit is 15MB). Paylocity recommends using a picture 275 pixels wide by 200 pixels tall for thumbnails to ensure the best compatibility.</p>
+<ul>
+<li>
+<p><strong>Select file from computer</strong></p>
+</li>
+<li>
+<p><strong>Select from gallery</strong> </p>
+</li>
+</ul>
+</li>
+<li>
+<p>Select <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Select a skill from the <strong>Skills</strong> dropdown under <strong>Skills &amp; Certifications</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Save Training</strong> to save and exit. Select <strong>Save and Launch Training</strong> to <a href="https://paylocity.egain.cloud/system/templates/selfservice/pctycss/help/customer/locale/en-US/portal/308600000001009/content/PCTY-68360/Assign-LMS-Training"><strong>assign the training in Learning Management System</strong></a>.</p>
+</li>
+</ol>
+<p>For additional information access the videos below:</p>
+<ul>
+<li>
+<p><a href="https://app.vidgrid.com/view/pIrOUPqwwQvE/?sr=bkp7S1rCVeSP"><strong>Upload Content</strong></a></p>
+</li>
+<li>
+<p><a href="https://app.vidgrid.com/view/Zj4NuTB64A0P/?sr=ASbHcGldU9yx"><strong>Building Training</strong></a></p>
+</li>
+</ul>
+<h2 id="assign-lms-training">Assign LMS Training</h2>
+<ol>
+<li>
+<p>Navigate to Learning &gt; Training Catalog.</p>
+</li>
+<li>
+<p>Select a Category to browse trainings or Search for a specific training.
+   <img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXernWk_y_Z1ctX98uVkXBx21kkdHjQAtdPOPj72QoMTBz40RVEKVFTz5WalcwdPZwsx5Kw1UQJWts3ufFqgJRHZR9kTD7mlTSj4TdR66ALhtXhF1hrwcT57Y1DNO4h5Gfb1T_A1nAXvtqCoYFCYpkNh9166?key=OO5mavFUOK7B5KK_gtgiwQ" /></p>
+</li>
+<li>
+<p>Select the training thumbnail.</p>
+</li>
+<li>
+<p>Review the Training Details.</p>
+</li>
+<li>
+<p>Select Launch.</p>
+</li>
+<li>
+<p>Those with LMS and Onboarding have the ability to <a href="https://paylocity.egain.cloud/system/templates/selfservice/pctycss/help/customer/locale/en-US/portal/308600000001009/content/PCTY-84130/Assign-Training-to-New-Hires-from-Onboarding-Automatically">auto-assign training to new hires</a>.</p>
+</li>
+<li>
+<p>Administrators may share a direct link to the training by selecting Share via Open Training then selecting Copy. The training link saves to the device clipboard and the Admin then shares the link with a learner.</p>
+</li>
+<li>
+<p>When a learner accesses this link, the user registers into the training as Not Started.</p>
+</li>
+<li>
+<p>The learner may select X on My Training to deregister.
+     <img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf2pRs_1LUguAG0zUM8wLEoax_94Tkl162Puk_FR-hPa8Y4fTnKb8sHuaUZvL_Qu0dzAY0EPQhpNGsLxql_1QTQKrKJD_v16EZDjEofBnhas9myWSGG7NctzCB1o3IM-skU0BYVs6YVKjm7OmnQs7iXkGDZ?key=OO5mavFUOK7B5KK_gtgiwQ" /></p>
+</li>
+<li>
+<p>Enter a Due Date, if necessary. This can not be edited once the course has active participants.</p>
+</li>
+<li>
+<p>Select Next.</p>
+</li>
+<li>
+<p>Review and select employees from the Available Employees menu. It is possible to adjust filters to change recipients, or paste employee IDs into the search bar.</p>
+<ul>
+<li>
+<p>Filter by:</p>
+<ul>
+<li>
+<p>Cost Center</p>
+</li>
+<li>
+<p>Employee Status</p>
+</li>
+<li>
+<p>Employment Type</p>
+</li>
+<li>
+<p>Hide Already Enrolled (Filters out employees that are currently assigned the training, but not employees who have already completed the training)</p>
+</li>
+<li>
+<p>Hire Date</p>
+</li>
+<li>
+<p>Position</p>
+</li>
+<li>
+<p>Rehire Date</p>
+</li>
+<li>
+<p>Supervisor Name</p>
+</li>
+<li>
+<p>Supervisor Status</p>
+<ol>
+<li>
+<p>The definition of Supervisor is any employee with Is Supervisor / Reviewer? enabled in their current position record.</p>
+</li>
+<li>
+<p>An employee does not require direct reports assigned to them to be considered a supervisor.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Work Location</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Trainings cannot be assigned to Non-Employee users.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://paylocity.egain.cloud/system/templates/selfservice/pctycss/help/customer/locale/en-US/portal/308600000001009/content/PCTY-72723/Customize-Assignment-Notifications-in-Learning-Management-System">Customize notifications in Learning Management System</a>. If due dates are necessary, Paylocity sends an automated reminder that cannot be customized.</p>
+</li>
+<li>
+<p>Select Next.
+    <img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdvJsErLiBlVQL0ldEqEQEApgM_zpzVIffU4l2kNc-oP3vk0KbUPDXGID7jSQoODUeaaXhBKL1gm9CDS19sTcPul_9_bonXpuHzX72_YzzJ_TnWl4MnwKrVLOynUAm7f7Y2mNFeDgPfcY7Jdodsswf3dgJ_?key=OO5mavFUOK7B5KK_gtgiwQ" /></p>
+</li>
+<li>
+<p>Select Assign Training to Employees.</p>
+<ul>
+<li>The employee receives the notification in <a href="https://paylocity.egain.cloud/system/templates/selfservice/pctycss/help/customer/locale/en-US/portal/308600000001009/content/PCTY-60805/Manage-User-Notifications">User Notifications</a> and via email.</li>
+</ul>
+</li>
+</ol>
+<p>💡 ADDITIONAL INFORMATION: A sync can take up to two hours to identify newly active employees. This includes new hires, and employees returning from a leave of absence or terminated status.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

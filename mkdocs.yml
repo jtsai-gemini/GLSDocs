@@ -1,0 +1,29 @@
+site_name: Gemini Documentation
+site_url: https://GLSDocs.github.io
+
+theme:
+  features:
+  - navigation.tabs
+  - navigation.tabs.sticky
+  name: material
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: orange
+      accent: deep orange
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: indigo
+      accent: deep purple
+
+markdown_extensions:
+  - toc:
+      baselevel: 2
